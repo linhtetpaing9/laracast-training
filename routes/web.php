@@ -12,7 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$name = [
+		'Go to the store',
+		'finished the screen cast',
+		'Sleep'
+
+
+
+	];
+    return view('welcome', compact('name'));
 });
 
 Route::get('/abouts', function () {
